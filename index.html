@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ICT SW2</title>
+</head>
+  <style>
+      pre {
+        font-family:cursive;
+      }
+      body{
+            background-size:cover;
+            background-color:#90EE90;
+            background-repeat:no-repeat;
+            background-position:bottom right;
+            background-attachment:fixed;
+            font-family:Roboto Slab;
+          }
+      	button {
+      		margin-top: 30px;
+      		margin-inline: 35px;
+      	}
+      	
+
+      		img { float: left;margin-right:25px; }
+
+      	
+     </style>
+
+<body>
+	
+	<div>
+		
+		<img src="https://scontent.fmnl4-2.fna.fbcdn.net/v/t1.15752-9/429074006_1080376136548745_7348388047104365270_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=F7Eo6r9ORGgAb5SkLCO&_nc_ht=scontent.fmnl4-2.fna&oh=03_Q7cD1QEF0OxmavJVSbTTPBiratATnnN90KEnprFIIS4iLS0PQw&oe=6657CBBE" width="250" height="200">
+		
+		<center><h1> Hi there my name is Trahan. And I am here to give you a math challenge.</h1></center> 
+
+		   <p>Enter value of x : <input type="number"id="x"></p>
+
+		   <p>Enter value of y : <input type="number"id="y"></p>
+
+		<h1 id="add"></h1>
+		<h1 id="multiply"></h1>
+		<h1 id="divide"></h1>
+		<h1 id="subtract"></h1>
+
+		<button type="Submit" onclick="plus()">The sum of x and y</button>
+		
+		<button type="Submit" onclick="multiply()">the product of x and y</button>
+		
+		<button type="Submit" onclick="divide()">the quotient of x and y</button>
+		
+		<button type="Submit" onclick="subtract()">the difference of x and y</button>
+
+	</div>
+	<script>
+
+		window.alert("Welcome to Math by Trahan");
+
+		
+		function plus(){
+		var x = document.getElementById("x").value;
+		var y = document.getElementById("y").value;
+		var sum = Number(x)+Number(y);
+	   alert("the sum is : " + sum);
+	    }
+
+	   function multiply(){
+		var x = document.getElementById("x").value;
+		var y = document.getElementById("y").value;
+		var multiply = parseInt(x * y);
+	   	alert("the product is : " + multiply);
+	    }
+
+	    function divide(){
+		var x = document.getElementById("x").value;
+		var y = document.getElementById("y").value;
+		var divide = parseInt(x / y);
+	   	alert("the quotient is : " + divide);
+	    }
+
+	    function subtract(){
+		var x = document.getElementById("x").value;
+		var y = document.getElementById("y").value;
+		var subtract = parseInt(x - y);
+	   	alert("the difference is : " + subtract);
+	    }
+
+	    function exponent()	{
+			var x = document.getElementById("x").value; 
+			var y = document.getElementById("y").value; 
+			var product = Number(x) ** Number(y); // using ** is the sign for exponentation while * is just multiplication
+			alert("x raised to y is equal to: " + product);
+		}
+	</script>
+
+
+
+</body>
+</html>
+
